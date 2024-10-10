@@ -1,0 +1,214 @@
+  else
+    {
+        return res.status()
+
+    }
+ 
+({
+
+})
+ 
+user=user.toObject();
+ 
+      let token=jwt.sign(payload,process.env.jwt_Secret,{expiresIn:"2h",}); 
+
+ 
+ console.log("hi");
+ 
+    console.log("hi");
+ 
+    console.log("hi");
+ 
+router.get("/getTodo",getTodo);
+router.get("/getTodoById/:id",getTodoById);
+router.put("/updateTodo/:id",updateTodo);
+router.delete("/deleteTodo/:id",deleteTodo);
+ 
+const{getTodo,getTodoById}=require("../controllers/getTodo");
+const{updateTodo}=require("../controllers/updateTodo");
+const{deleteTodo}=require("../controllers/deleteTodo");
+
+
+ 
+const mongoose  = require("mongoose");
+const userSchema=new mongoose.Schema(
+    {
+      name:{
+        type:String,
+        required:true,
+        trim:true,
+      } ,
+      email:{
+        type:String,
+        required:true,
+        trim:true,
+      },
+      password:{
+        type:String,
+        required:true,
+      },
+      role:{
+        type:String,
+        enum:["Admin","Student","Visitor"]
+      }
+    }
+);
+module.exports=mongoose.model("user",userSchema);
+ 
+require("./config/database");
+ 
+console.log("App is working at Port ${PORT}");
+ 
+    console.log("App is working at Port ${PORT}");
+
+ 
+router.post("/login",login);
+ 
+router.post("/signup",signup);
+ 
+router.get("/getTodoById/:id",getTodoById);
+router.put("/updateTodo/:id",updateTodo);
+router.delete("/deleteTodo/:id",deleteTodo);
+ 
+const{getTodo,getTodoById}=require("../controllers/getTodo");
+const{updateTodo}=require("../controllers/updateTodo");
+const{deleteTodo}=require("../controllers/deleteTodo");
+
+
+ 
+const
+ 
+title:{
+            type:String,
+            required:true,
+            maxLength:50,
+        },
+        description:{
+            type:String,
+            required:true,
+            maxLength:50,
+        },
+        createdAt:{
+            type:Date,
+            required:true,
+            default:Date.now(),
+        },
+        updatedAt:{
+            type:String,
+            required:true,
+            default:Date.now(),
+        }
+ 
+const mongoose=require("mongoose");
+
+ 
+const Todo=require("../models/Todo");
+ 
+const Todo=require("../models/Todo");
+ 
+pdated
+ 
+ const todos =
+ 
+,{title,description,updatedAt:Date.now()}
+ 
+  const {title,description}=req.body;
+ 
+  const {title,description}=req.body;
+ 
+66f6ea9fb2e9bbab2935963d
+ 
+http://localhost:3000/api/v1/getTodoById/66f6ea9fb2e9bbab2935963d
+ 
+http://localhost:3000/api/v1/getTodoById/66f6ea9fb2e9bbab2935963d
+ 
+getTodoById
+ 
+exports.getTodoById = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const todo = await Todo.findById({ _id: id });
+        
+        if (!todo) {
+            return res.status(404).json({ success: false, message: "No data found by given id" });
+        }
+        
+        res.status(200).json({
+            success: true,
+            data: todo,
+            message: `Data from ${id} found successfully`
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({
+            success: false,
+            data: "Internal server error",
+            message: err.message,
+        });
+    }
+}
+ 
+const{getTodoById}=require("../controllers/getTodoById");
+ 
+No data found by given id
+ 
+http://localhost:3000/api/v1/getTodo
+ 
+http://localhost:3000/api/v1/getTodo
+ 
+http://localhost/api/v1/createTodo
+ 
+const {title,description}=req.body;
+        const response=await Todo.create({title,description});
+        res.status(200).json(
+            {
+                success:true,
+                data:response,
+                message:"Entry created successfully Data inserted"
+            }
+        );
+ 
+{ useNewUrlParser: true, useUnifiedTopology: true 
+ 
+
+const todoRoutes=require("./routes/todos");
+app.use("/api/todos",todoRoutes);
+ 
+app.listen(3000, () => { 
+    console.log("app is running successfully at 3000");
+});
+ 
+message:err.message,
+ 
+ useNewUrlParser:true,
+    useUnifiedTopology:true
+ 
+"console successful"))
+ 
+// app.post('/api/cars',(request,response)=> {
+//     const {name,brand}=request.body;
+//     console.log(name);
+//     console.log(brand);
+//     response.send("car submitted sucessfully")
+// });
+
+ 
+app.post('/api/cars',(request,response)=> {
+    const {name,brand}=request.body();
+    console.log(name);
+    console.log(brand);
+    response.send("car submitted sucessfully")
+});
+
+ 
+app.post('/api/cars', (request, response) => {  // Removed extra parenthesis
+    const { name, brand } = request.body;  // request.body is an object, no parentheses
+    console.log(name);
+    console.log(brand);
+    response.send("car submitted successfully");
+});
+ 
+// request.body is an object, no parentheses
+ 
+// Removed extra parenthesis
+ 
