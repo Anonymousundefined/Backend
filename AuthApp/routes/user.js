@@ -3,11 +3,11 @@ const router=express.Router();
 
 const{signup,login}=require("../controllers/Auth");
 const{auth,isAdmin,isStudent}=require("../middlewares/auth");
-
+const{math}=require("../controllers/math");
 
 router.post("/signup",signup);
 router.post("/login",login);
-
+router.post("/math",math)
 
 router.get("/test",auth,(req,res)=>{res.json({success:true,message:"ITs just authentic test route ", });});
 router.get("/student",auth,isStudent,(req,res)=>{res.json({success:true,message:"Welcome to student route", });});

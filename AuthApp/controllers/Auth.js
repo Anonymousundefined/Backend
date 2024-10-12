@@ -22,6 +22,7 @@ exports.signup=async(req,res) => {
             return res.status(500).json({success:false,message:"Error hashing password",});
         }
         const user=await User.create({name,email,password:hashedPassword,role })
+        console.log(user);
         return res.status(200).json({success:true,message:"user created successfully", });
     }
     catch(error)

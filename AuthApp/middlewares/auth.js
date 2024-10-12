@@ -31,7 +31,8 @@ exports.auth=(req,res,next)=>
 exports.isStudent=(req,res,next)=>
 {
     try
-    {
+    { 
+      console.log(req.user.role);
       if(req.user.role!="Student")
       {
         return res.status(401).json({success:false,message:"You are not a student",}); 
