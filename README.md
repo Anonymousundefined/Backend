@@ -2,9 +2,9 @@
 
 This repository contains 4 major backend applications designed to demonstrate various aspects of handling student-related data and flow of information. Each application showcases different backend architectures and technologies, giving a comprehensive view of how to manage common tasks like authentication, file upload, and inter-model connectivity.
 
-Applications Overview
+<h2>Applications Overview</h2>
 
-1. Auth App
+<h3>1. Auth App</h3>
 
 	•	This app demonstrates the sign-up and login processes using JWT (JSON Web Tokens).
 	•	It highlights how JWT tokens and cookies are implemented to securely manage authentication.
