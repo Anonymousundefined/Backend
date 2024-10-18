@@ -39,21 +39,28 @@ This repository contains 4 major backend applications designed to demonstrate va
 1.Clone this repository to your local machine using:
 
 ```bash
-  git clone https://github.com/codebasics/langchain.git
+  https://github.com/Anonymousundefined/Backend
 ```
-2.Navigate to the project directory:
+2.Navigate to the project directory /Particular app:
 
 ```bash
-  cd 4_sqldb_tshirts
+  cd <project_folder>
 ```
-3. Install the required dependencies using pip:
+3. Install the required dependencies :
 
 ```bash
-  pip install -r requirements.txt
+ npm install express nodemon jsonwebtoken mongooswe dotenv cloudinary
 ```
-4.Acquire an api key through makersuite.google.com and put it in .env file
+4. Set up your environment variables for JWT, Cloudinary, and Nodemailer in a .env file according to the requirement of project/particular app:
 
 ```bash
-  GOOGLE_API_KEY="your_api_key_here"
+  JWT_SECRET=<your_jwt_secret>
+CLOUDINARY_API_KEY=<your_cloudinary_api_key>
+CLOUDINARY_API_SECRET=<your_cloudinary_api_secret>
+NODEMAILER_USER=<your_nodemailer_user>
+NODEMAILER_PASS=<your_nodemailer_pass>
 ```
-5. For database setup, run database/db_creation_atliq_t_shirts.sql in your MySQL workbench
+5. connect to MongoDb locally and  run server using
+```bash
+ nodemon index.js
+```
