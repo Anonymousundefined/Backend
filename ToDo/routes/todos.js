@@ -8,7 +8,6 @@ const{deleteTodo}=require("../controllers/deleteTodo");
 
 
 
-
 router.post("/createTodo",createTodo);
 router.get("/getTodo",getTodo);
 router.get("/getTodoById/:id",getTodoById);

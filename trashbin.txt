@@ -1,3 +1,121 @@
+const Likes=require("../model/Likes");
+const Post = require("../model/Post");
+ 
+.populate("comments").exec()
+ 
+ const updatedPost = await Post.findById(post).populate("comments").exec();
+ 
+/ Then, find the post again and populate the 'comments' field
+ 
+const updatedPost=await Post.findByIdAndUpdate(post,{$push:{comments:response._id}},{new:true}).populate("comments").exec();
+ 
+data:response,
+ 
+Entry created successfully Data inserted
+ 
+title,description,email,createdAt,createdB
+ 
+email:{
+            type:String,
+            required:true,
+        },
+        createdAt:{
+            type:Date,
+            
+            default:Date.now(),
+        },
+        createdBy:{
+            type:String,
+            required:true,
+            maxLength:50,
+        },
+        likes:[{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:Likes,
+        }],
+        comments:[{
+            type:mongoose.Schema.Types.ObjectId,
+            ref:Comments,
+        }]
+ 
+maxLength:50,
+ 
+maxLength:50,
+ 
+const mongoose  = require("mongoose");
+ 
+ res.write("http://localhost/api/v1/createTodo\n");
+    res.write("http://localhost:3000/api/v1/getTodo\n");
+    res.write("http://localhost:3000/api/v1/getTodoById/66f6ea9fb2e9bbab2935963d\n");
+    res.write("http://localhost:3000/api/v1/updateTodo/66f6ea9fb2e9bbab2935963d\n");
+    res.write("http://localhost:3000/api/v1/deleteTodo/66f6ea9fb2e9bbab2935963d\n");
+ 
+const{getTodo,getTodoById}=require("../controllers/getTodo");
+const{updateTodo}=require("../controllers/updateTodo");
+const{deleteTodo}=require("../controllers/deleteTodo");
+ 
+router.get("/getTodoById/:id",getTodoById);
+router.put("/updateTodo/:id",updateTodo);
+router.delete("/deleteTodo/:id",deleteTodo);
+ 
+type:Date,
+            required:true,
+            default:Date.now(),
+ 
+updatedAt:{
+            type:String,
+            required:true,
+            default:Date.now(),
+        }
+ 
+const user=require("./middlewares/auth");
+ 
+ console.log(user.email);
+ 
+ console.log(user.email);
+ 
+ console.log(user);
+ 
+html:'<h2>Hello client</h2> <p>File uploaded view here:<a href="${doc.imageUrl}">${doc.imageUrl}</a></p>',
+ 
+        html:'<h2>Hello client</h2> <p>File uploaded view here:<a href="${doc.imageUrl}">${doc.imageUrl}</a></p>',
+
+ 
+gsadar441@gmail.com
+ 
+console.log(doc);
+ 
+// const db=require("./config/database");
+// db.dbconnect();
+ 
++'${file.name.split('.')[1]}'
+ 
+'${file.name.split(.)[1]}'
+ 
+        enum:["Admin","Student","Visitor"]
+
+ 
+equired:true,
+ 
+ trim:true,
+ 
+rim:true,
+ 
+const mongoose=require("mongoose");
+
+ 
+const express=require("express");
+const router=express.Router();
+
+const {localFileUpload}=require("../contollers/fileUpload");
+
+ 
+JWT_SECRET
+ 
+{
+    
+}
+ 
   else
     {
         return res.status()
