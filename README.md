@@ -4,7 +4,7 @@ This repository contains 4 major backend applications designed to demonstrate va
 
 <h2>Applications Overview</h2>
 
-1. Auth App
+1. <h3>Auth App</h3>
 
 	•	This app demonstrates the sign-up and login processes using JWT (JSON Web Tokens).
 	•	It highlights how JWT tokens and cookies are implemented to securely manage authentication.
@@ -13,7 +13,7 @@ This repository contains 4 major backend applications designed to demonstrate va
 	•	Login & Logout with JWT
 	•	Cookie-based session management
 
-2. To-Do App
+2. <h3>To-Do App</h3>
 
 	•	This app demonstrates different API requests for task management.
 	•	Provides a comprehensive view of how to create, read, update, and delete (CRUD) operations in a to-do list app.
@@ -21,7 +21,7 @@ This repository contains 4 major backend applications designed to demonstrate va
 	•	Add, edit, and delete tasks
 	•	API-based interactions using RESTful architecture
 
-3. File Upload App
+3.<h3> File Upload App</h3>
 
 	•	Focuses on how to upload images and videos to Cloudinary, a cloud-based media management platform.
 	•	Demonstrates the use of Nodemailer for sending emails, making it a robust solution for handling file uploads and notifications.
@@ -29,7 +29,7 @@ This repository contains 4 major backend applications designed to demonstrate va
 	•	Image and video uploads to Cloudinary
 	•	Sending notifications via Nodemailer
 
-4. Blog App
+4. <h3>Blog App</h3>
 
 	•	This app highlights the concept of references between models, showcasing connectivity between different schemas in a backend architecture.
 	•	Provides a clear example of how to relate data across models such as users and posts.
