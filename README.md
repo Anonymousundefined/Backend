@@ -6,7 +6,7 @@ This repository contains 4 major backend applications designed to demonstrate va
 
 	-	This app demonstrates the sign-up and login processes using JWT (JSON Web Tokens).
 	-	It highlights how JWT tokens and cookies are implemented to securely manage authentication.
-	-	Core Features:
+	-	<h4>Core Features:</h4>
 	-	User Registration
 	-	Login & Logout with JWT
 	-	Cookie-based session management
