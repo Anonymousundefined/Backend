@@ -1,4 +1,4 @@
-Student Flow Backend Architectures
+<h1>Student Flow Backend Architectures</h1>
 
 This repository contains 4 major backend applications designed to demonstrate various aspects of handling student-related data and flow of information. Each application showcases different backend architectures and technologies, giving a comprehensive view of how to manage common tasks like authentication, file upload, and inter-model connectivity.
 
