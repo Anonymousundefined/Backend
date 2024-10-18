@@ -2,19 +2,14 @@
 
 This repository contains 4 major backend applications designed to demonstrate various aspects of handling student-related data and flow of information. Each application showcases different backend architectures and technologies, giving a comprehensive view of how to manage common tasks like authentication, file upload, and inter-model connectivity.
 
-<h2>Applications Overview</h2>
+1. <h3>Auth App</h3>
 
-<h3>Auth App</h3>
-
-<p>This app demonstrates the sign-up and login processes using JWT (JSON Web Tokens).</p>
-<p>It highlights how JWT tokens and cookies are implemented to securely manage authentication.</p>
-
-<h4>Core Features:</h4>
-<ul>
-    <li>User Registration</li>
-    <li>Login & Logout with JWT</li>
-    <li>Cookie-based session management</li>
-</ul>
+	-	This app demonstrates the sign-up and login processes using JWT (JSON Web Tokens).
+	-	It highlights how JWT tokens and cookies are implemented to securely manage authentication.
+	-	Core Features:
+	-	User Registration
+	-	Login & Logout with JWT
+	-	Cookie-based session management
 
 2. <h3>To-Do App</h3>
 
@@ -24,7 +19,7 @@ This repository contains 4 major backend applications designed to demonstrate va
 	•	Add, edit, and delete tasks
 	•	API-based interactions using RESTful architecture
 
-3.<h3> File Upload App</h3>
+3. <h3>File Upload App</h3>
 
 	•	Focuses on how to upload images and videos to Cloudinary, a cloud-based media management platform.
 	•	Demonstrates the use of Nodemailer for sending emails, making it a robust solution for handling file uploads and notifications.
